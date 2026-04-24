@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'pages/home_page.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,18 +13,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        backgroundColor: Colors.deepPurple[300],
-        body: Center(
-          child: Container(
-            height: 300,
-            width: 300,
-            color: Colors.tealAccent,
-            padding: EdgeInsets.all(25),
-            child: Text("Linda M."),
-          ),
-        ),
-      ),
+      home: HomePage(),
+      theme: ThemeData(primarySwatch: Colors.deepPurple),
     );
   }
 }
